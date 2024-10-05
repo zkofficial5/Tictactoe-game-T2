@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #C52233, #A51C30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html {
+  font-size: 16px;
+}
+#player-form {
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+  text-align: center;
+}
+#player-form h2 {
+  margin-bottom: 1em;
+  color: #A51C30;
+}
+#player-form label {
+  display: block;
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  color: #74121D;
+}
+#player-form input {
+  width: 80%;
+  padding: 0.5em;
+  border: 1px solid #A7333F;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-bottom: 1em;
+  background-color: #F0E1E4;
+  color: #74121D;
+}
+#start-game {
+  font-size: 1.2em;
+  padding: 0.7em 2em;
+  background-color: #C52233;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+#game {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2vmin;
+  margin-bottom: 2em;
+}
+.button-option {
+  background: #ffffff;
+  height: 22vmin;
+  width: 22vmin;
+  border: 1px solid #A7333F;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #A7333F;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #340308;
+  color: #ffffff;
+  border: #A51C30;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+.popup {
+  background: linear-gradient(135deg, #C52233, #A51C30);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 2em;
+}
+
+#new-game {
+  font-size: 1em;
+  padding: 0.7em 2em;
+  background-color: #74121D;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+}
+.popup.hide {
+  display: none;
+}
+.hide {
+  display: none;
+}
